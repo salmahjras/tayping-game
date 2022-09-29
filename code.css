@@ -1,0 +1,112 @@
+:root {
+    --main-color: #2196f3;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+
+  }
+  .game {
+    background-image: url(../10/photo_2022-09-29_14-08-44.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+   background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+  .container {
+   margin: auto;
+
+    max-width: 900px;
+  }
+  .name {
+    background-color: rgb(30, 190, 190);
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .message {
+    background-color: rgba(255, 255, 255, 0.644);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    text-align: center;
+  }
+  .message span {
+    font-weight: bold;
+    color: #009688;
+  }
+  .message span::before {
+    content: "[ ";
+  }
+  .message span::after {
+    content: " ]";
+  }
+  .start {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #009687b0;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+ .start:hover{
+  background-color: rgb(150, 210, 218);
+ }
+  .the-word {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 60px;
+    color: rgb(19, 55, 77);
+    user-select: none;
+  }
+  .input {
+    margin: 15px 0;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border: 3px solid #0096879d;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 6px;
+    /* caret-color: var(--main-color); */
+    background-color:rgba(255, 255, 255, 0.699);
+  }
+  .input:focus {
+    outline: none;
+  }
+ 
+  .control {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.486);
+    padding: 15px;
+    border-radius: 30px;
+  }
+  .control span {
+    font-weight: bold;
+    color: #009688;
+  }
+  .finish {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+  }
+  .finish .good {
+    color: var(--main-color);
+  }
+  .finish .bad {
+    color: red;
+  }
+  
